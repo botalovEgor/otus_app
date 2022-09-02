@@ -1,8 +1,8 @@
 spring:
   application:
-    name: otus
+    name: ${APP_NAME}
   datasource:
-    driver-class-name: org.postgresql.Driver
+    driver-class-name: ${DRIVER_CLASS_NAME}
     url: ${DB_URL}
     username: ${DB_USER}
     password: ${DB_PASSWORD}
@@ -11,4 +11,4 @@ spring:
       ddl-auto: none
 
 server:
-  port: 8000
+  port: ${APP_PORT}
